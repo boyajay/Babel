@@ -1,0 +1,26 @@
+{
+  "name": "Babel",
+  "version": "0.1.0",
+  "description": "a web app that tears down the barrier of language",
+  "author": "Boya Jiang <jiang.boya@yahoo.com>",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/boyajay/babel.git"
+  },
+  "bugs": {
+    "url": "http://github.com/boyajay/babel/issues"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "brewerydb-node": "0.0.1",
+    "express": "^4.4.5",
+    "morgan": "^1.1.1",
+    "nodemon": "^1.8.1",
+    "q": "^1.4.1",
+    "request": "^2.69.0"
+  }
+}

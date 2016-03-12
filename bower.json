@@ -1,0 +1,17 @@
+{
+  "name": "Babel",
+  "version": "0.1.0",
+  "authors": ["Boya Jiang"],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "server/config/auth.js"
+  ],
+  "dependencies": {
+    "angular": "~1.3.16",
+    "angular-route": "~1.3.16",
+    "angular-mocks": "~1.3.16"
+  }
+}
