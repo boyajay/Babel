@@ -1,0 +1,6 @@
+node_modules/
+*.log
+client/libs/
+server/config/auth.js
+build/
+dist/
