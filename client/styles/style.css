@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1 {
+  background-color: gray;
+  border-bottom: solid white 3px;
+  margin: 0;
+  padding: 0.1em;
+  color: #85e0e0;
+  text-align: center;
+}
+
+#buttonRow {
+  margin-top: 3em;
+  text-align: center;
+}
+
+#startButton {
+  margin: 0 auto;
+  margin-top: 4em;
+  background-color: #85e0e0;
+  border-radius: 6px;
+  color: #33333c;
+  left: 45%;
+  font-weight: bold; 
+  width: 11em; 
+}
+
+.langMenu {
+  margin-top: 1em;
+  color: #bcbcbc;
+  max-width: 12em;
+}
+
+.selectPrompt1, .selectPrompt2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 30%;
+}
+
+.selectPrompt1 p, .selectPrompt2 p {
+  color: white;
+  margin: 0;
+  padding: 0.1em;
+} 
+
