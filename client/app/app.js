@@ -2,6 +2,7 @@ angular.module('babel', [
   'babel.translator',
   'babel.selection',
   'ngRoute',
+  'LanguageFactory'
 ])
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
@@ -9,7 +10,11 @@ angular.module('babel', [
     templateUrl: 'app/translator/translator.html',
     controller: 'TranslatorController'
   })
+  .when('/selection', {
+    templateUrl: 'app/selection/selection.html',
+    controller: 'SelectionController'
+  })
   .otherwise({
-    redirectTo: '/translator'
+    redirectTo: '/selection'
   });
 })
