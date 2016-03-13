@@ -1,3 +1,25 @@
 <div id='container' ng-controller="SelectionController">
-  SELECTION
+
+  <div class='selectPrompt1'> <p>Select language for first Speaker:</p> 
+    <div class="row">
+      <select name="Select1" class=" langMenu col-md-3" ng-model="lang1">
+        <option class="" value="">Select a language</option>
+        <option ng-repeat="lang in languageChoices" value="{{lang.value}}">{{lang.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class='selectPrompt2'> <p>Select language for second Speaker:</p> 
+    <div class="row">
+      <select name="Select1" class="langMenu col-md-3" ng-model="lang2">
+        <option value="">Select a language</option>
+        <option ng-repeat="lang in languageChoices" value="{{lang.value}}">{{lang.name}}</option>
+      </select>
+    </div>
+  </div>
+  <row>
+    <div id="buttonRow">
+    <button ng-click="selectionEntered()" class="btn btn-info" id="startButton()"> Start conversation</button>
+    </div>
+  </row>
 </div>
