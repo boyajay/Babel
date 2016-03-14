@@ -1,6 +1,5 @@
 angular.module('babel.translator', [])
 .controller('TranslatorController', function ($scope, $window, Language) {
-
-console.log(Language.lang1, Language.lang2);
-    
+  $scope.lang1 = Language.selectedLanguages.lang1.name;
+  $scope.lang2 = Language.selectedLanguages.lang2.name;    
 });

@@ -27,19 +27,21 @@ angular.module('LanguageFactory', [])
   ];
 
   var selectedLanguages = {lang1: null, lang2:null};
+
   function set(lang1, lang2) {
-   selectedLanguages.lang1 = lang1;
-   selectedLanguages.lang2 = lang2;
- }
+   selectedLanguages.lang1 = JSON.parse(lang1);
+   selectedLanguages.lang2 = JSON.parse(lang2);
+  }
 
- function get() {
-  return selectedLanguages;
- }
+  function get() {
+    return selectedLanguages;
+  }
 
- return {
-  choices: choices,
-  set: set,
-  get: get
- }      
+  return {
+    selectedLanguages: selectedLanguages,
+    choices: choices,
+    set: set,
+    get: get
+  }      
 
 });
